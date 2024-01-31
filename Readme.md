@@ -12,7 +12,10 @@ Once inside the container, start the NGRok service by
 `ngrok http 5000`
 
 
-Now to start the demo server, we need to start another terminal, and run the following command
+Now to start the demo server, we need to start another terminal and go into the container using same command, 
+`docker exec -it ngrok-web-1 bash`
+
+and run the following command
 
 `cd docker-trials/ && node test-server.js`
 
