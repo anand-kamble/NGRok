@@ -12,7 +12,7 @@ RUN apt-get update && \
   apt install -y python-is-python3  && \
   curl -sSL https://install.python-poetry.org/  | python - && \
   apt install -y cmake make git vim  && \
-  apt-get install nodejs && \
+  apt-get install nodejs -y && \
   git clone https://github.com/anand-kamble/docker-trials
 
 
