@@ -1,0 +1,13 @@
+version: '1'
+
+services:
+  web:
+    build: .
+    image: test:ngrok
+    entrypoint: /bin/sh
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    # ports:
+      # - "5000:5000"
+    # volumes:
+      # - Models:/root/src/2023/langchain_gordon_experiments
